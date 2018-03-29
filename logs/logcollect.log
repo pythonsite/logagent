@@ -1,0 +1,27 @@
+2018/03/28 20:14:57.065 [D] init success
+2018/03/28 23:44:03.972 [D] init success
+2018/03/28 23:44:34.743 [D] init success
+2018/03/28 23:45:10.514 [D] init success
+2018/03/28 23:51:53.746 [D] init success
+2018/03/28 23:51:54.512 [E] init kafka client failed,err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+
+2018/03/28 23:52:39.480 [D] init success
+2018/03/28 23:52:40.247 [E] init kafka client failed,err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+
+2018/03/28 23:53:00.937 [D] init success
+2018/03/29 01:02:33.090 [D] init success
+2018/03/29 01:03:21.549 [D] init success
+2018/03/29 01:04:47.242 [D] init success
+2018/03/29 01:12:57.665 [D] init success
+2018/03/29 01:14:44.002 [D] init success
+2018/03/29 23:34:21.500 [D] init success
+2018/03/29 23:34:26.281 [E] init kafka client failed,err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+
+2018/03/29 23:34:48.508 [D] init success
+2018/03/29 23:34:53.276 [E] init kafka client failed,err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+
+2018/03/29 23:34:56.163 [D] init success
+2018/03/29 23:35:00.935 [E] init kafka client failed,err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+
+2018/03/29 23:38:18.971 [D] init success
+2018/03/29 23:46:38.426 [D] init success
