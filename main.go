@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/astaxie/beego/logs"
 	"encoding/json"
+	"time"
 )
 
 func getLevel(level string) int{
@@ -48,9 +49,24 @@ func main() {
 		return
 	}
 	logs.Debug("init success")
+	ipArrays, err = getLocalIP()
+	logs.Info(ipArrays)
+	if err != nil {
+		logs.Error("get local ip failed, err:%v", err)
+		return
+	}
 
+	logs.Debug("get local ip succ, ips:%v", ipArrays)
 	err = initKafka()
-	if err != nil{
+	if err != nil {
+		logs.Error("init kafka faild, err:%v", err)
+		return
+	}
+	//logs.Info(appConfig.etcdAddr,appConfig.etcdWatchKeyFmt,time.Duration(appConfig.etcdTimeout)*time.Microsecond)
+	err = initEtcd(appConfig.etcdAddr, appConfig.etcdWatchKeyFmt,
+		time.Duration(appConfig.etcdTimeout)*time.Millisecond)
+	if err != nil {
+		logs.Error("init etcd failed, err:%v", err)
 		return
 	}
 	RunServer()

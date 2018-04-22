@@ -6,6 +6,7 @@ import (
 	"sync"
 	"github.com/astaxie/beego/logs"
 	"strings"
+	"encoding/json"
 )
 
 type TailMgr struct {
@@ -17,8 +18,11 @@ type TailMgr struct {
 type TailObj struct {
 	//这里是每个读取日志文件的对象
 	tail *tail.Tail
+	secLimit *SecondLimit
 	offset int64  //记录当前位置
-	filename string
+	//filename string
+	logConf logConfig
+	exitChan chan bool
 }
 
 var tailMgr *TailMgr
@@ -31,15 +35,15 @@ func NewTailMgr()(*TailMgr){
 	return tailMgr
 }
 
-func (t *TailMgr) AddLogFile(filename string)(err error){
+func (t *TailMgr) AddLogFile(conf logConfig)(err error){
 	t.lock.Lock()
 	defer t.lock.Unlock()
-	_,ok := t.tailObjMap[filename]
+	_,ok := t.tailObjMap[conf.LogPath]
 	if ok{
-		err = fmt.Errorf("duplicate filename:%s\n",filename)
+		err = fmt.Errorf("duplicate filename:%s\n",conf.LogPath)
 		return
 	}
-	tail,err := tail.TailFile(filename,tail.Config{
+	tail,err := tail.TailFile(conf.LogPath,tail.Config{
 		ReOpen:true,
 		Follow:true,
 		Location:&tail.SeekInfo{Offset:0,Whence:2},
@@ -48,19 +52,73 @@ func (t *TailMgr) AddLogFile(filename string)(err error){
 	})
 
 	tailobj := &TailObj{
-		filename:filename,
+		secLimit:NewSecondLimit(int32(conf.SendRate)),
+		logConf:conf,
 		offset:0,
 		tail:tail,
+		exitChan:make(chan bool,1),
 	}
-	t.tailObjMap[filename] = tailobj
+	t.tailObjMap[conf.LogPath] = tailobj
+	logs.Info("map [%s]" ,t.tailObjMap)
+	go tailobj.readLog()
 	return
 }
 
+
+func(t *TailMgr) reloadConfig(logConfArr []logConfig)(err error){
+	for _, conf := range logConfArr{
+		tailObj,ok := t.tailObjMap[conf.LogPath]
+		if !ok{
+			logs.Debug("conf:%v -- tailobj:%v",conf,tailObj)
+			err = t.AddLogFile(conf)
+			if err != nil {
+				logs.Error("add log file failed,err:%v",err)
+				continue
+			}
+			continue
+		}
+		tailObj.logConf = conf
+		t.tailObjMap[conf.LogPath] = tailObj
+		logs.Info(t.tailObjMap)
+	}
+	// 处理删除的日志收集配置
+	for key,tailObj := range t.tailObjMap {
+		var found = false
+		for _, newValue := range logConfArr {
+			if key == newValue.LogPath {
+				found = true
+				break
+			}
+		}
+		if found == false {
+			logs.Warn("log path:%s is remove",key)
+			tailObj.exitChan <- true
+			delete(t.tailObjMap,key)
+		}
+	}
+
+	return
+}
+
+
+
 func (t *TailMgr) Process(){
-	//开启线程去读日志文件
-	for _, tailObj := range t.tailObjMap{
-		waitGroup.Add(1)
-		go tailObj.readLog()
+	logChan := GetLogConf()
+	for conf := range logChan {
+		logs.Debug("log conf :%v",conf)
+		var logConfArr []logConfig
+		err := json.Unmarshal([]byte(conf),&logConfArr)
+		if err != nil {
+			logs.Error("unmarshal failed,err:%v conf:%v",err,conf)
+			continue
+		}
+		logs.Debug("unmarshal succ conf:%v",logConfArr)
+		err = t.reloadConfig(logConfArr)
+		if err != nil {
+			logs.Error("realod config from etcd failed err:%v",err)
+			continue
+		}
+		logs.Debug("reaload from etcd success,config:%v",logConfArr)
 	}
 }
 
@@ -75,8 +133,18 @@ func (t *TailObj) readLog(){
 		if len(str)==0 || str[0] == '\n'{
 			continue
 		}
+		kafkaSender.addMessage(line.Text,t.logConf.Topic)
+		t.secLimit.Add(1)
+		t.secLimit.Wait()
 
-		kafkaSender.addMessage(line.Text)
+
+		select {
+		case <- t.exitChan:
+			logs.Warn("tail obj is exited,config:%v",t.logConf)
+			return
+		default:
+		}
+
 	}
 	waitGroup.Done()
 }
@@ -84,15 +152,6 @@ func (t *TailObj) readLog(){
 
 func RunServer(){
 	tailMgr = NewTailMgr()
-	// 这一部分是要调用tailf读日志文件推送到kafka中
-	for _, filename := range appConfig.LogFiles{
-		err := tailMgr.AddLogFile(filename)
-		if err != nil{
-			logs.Error("add log file failed,err:%v",err)
-			continue
-		}
-
-	}
 	tailMgr.Process()
 	waitGroup.Wait()
 }

@@ -25,3 +25,1295 @@
 
 2018/03/29 23:38:18.971 [D] init success
 2018/03/29 23:46:38.426 [D] init success
+2018/04/04 00:35:56.123 [D] init success
+2018/04/04 00:39:01.112 [D] init success
+2018/04/04 00:46:47.373 [D] init success
+2018/04/04 13:46:14.908 [D] init success
+2018/04/04 13:46:14.908 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 13:46:14.908 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 13:48:35.061 [D] init success
+2018/04/04 13:48:35.061 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 13:48:35.062 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 13:48:35.826 [E] init kafka client failed,err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+
+2018/04/04 13:48:35.826 [E] init kafka faild, err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+2018/04/04 14:05:12.701 [D] init success
+2018/04/04 14:05:12.702 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 14:05:12.702 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 14:05:12.768 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.50.28/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/04 14:05:12.775 [D] init etcd success
+2018/04/04 14:07:58.791 [D] init success
+2018/04/04 14:07:58.791 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 14:07:58.791 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 14:07:58.795 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.50.28/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/04 14:07:58.795 [D] init etcd success
+2018/04/04 14:07:58.797 [I] ----------------
+2018/04/04 14:11:07.674 [D] init success
+2018/04/04 14:11:07.674 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 14:11:07.674 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 14:11:07.681 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.50.28/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/04 14:11:07.683 [D] init etcd success
+2018/04/04 14:11:07.687 [D] init etcd success
+2018/04/04 14:11:07.687 [I] ----------------
+2018/04/04 14:17:31.946 [D] init success
+2018/04/04 14:17:31.946 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 14:17:31.946 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 14:17:31.950 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.50.28/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/04 14:17:31.951 [D] init etcd success
+2018/04/04 14:17:31.953 [I] ----------------
+2018/04/04 14:17:48.984 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    {\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/error.log\",\n        \"service\":\"account\",\n        \"send_rate\":50000\n\t},\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/access.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/04 14:17:48.984 [I] 1111111111
+2018/04/04 14:17:48.984 [D] log conf :
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 14:17:49.985 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    \"nginx_log\"\n]\n"
+
+2018/04/04 14:17:49.986 [I] 1111111111
+2018/04/04 14:17:49.986 [D] log conf :
+[
+    "nginx_log"
+]
+
+2018/04/04 14:37:39.077 [D] init success
+2018/04/04 14:37:39.077 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 14:37:39.077 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 14:37:39.096 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.50.28/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/04 14:37:39.096 [D] init etcd success
+2018/04/04 14:37:39.098 [D] "/logagent/192.168.50.28/log_config" : "\n[\n    \"nginx_log\"\n]\n"
+
+2018/04/04 14:37:39.099 [D] log conf :
+[
+    "nginx_log"
+]
+
+2018/04/04 14:37:39.099 [E] unmarshal failed,err:json: cannot unmarshal string into Go value of type main.logConfig conf:
+[
+    "nginx_log"
+]
+
+2018/04/04 14:38:11.194 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    {\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/error.log\",\n        \"service\":\"account\",\n        \"send_rate\":50000\n\t},\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/access.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/04 14:38:11.196 [D] log conf :
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 14:38:11.196 [E] unmarshal failed,err:json: cannot unmarshal number into Go struct field logConfig.send_rate of type string conf:
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 14:38:12.199 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    \"nginx_log\"\n]\n"
+
+2018/04/04 14:38:12.199 [D] log conf :
+[
+    "nginx_log"
+]
+
+2018/04/04 14:38:12.199 [E] unmarshal failed,err:json: cannot unmarshal string into Go value of type main.logConfig conf:
+[
+    "nginx_log"
+]
+
+2018/04/04 15:01:37.686 [D] init success
+2018/04/04 15:01:37.686 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:01:37.686 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:01:38.444 [E] init kafka client failed,err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+
+2018/04/04 15:01:38.444 [E] init kafka faild, err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+2018/04/04 15:01:41.624 [D] init success
+2018/04/04 15:01:41.624 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:01:41.624 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:01:42.388 [E] init kafka client failed,err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+
+2018/04/04 15:01:42.388 [E] init kafka faild, err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+2018/04/04 15:02:29.825 [D] init success
+2018/04/04 15:02:29.825 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:02:29.825 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:02:30.588 [E] init kafka client failed,err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+
+2018/04/04 15:02:30.588 [E] init kafka faild, err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+2018/04/04 15:03:26.685 [D] init success
+2018/04/04 15:03:26.686 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:03:26.686 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:03:26.724 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.50.28/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/04 15:03:26.725 [D] init etcd success
+2018/04/04 15:03:26.726 [D] "/logagent/192.168.50.28/log_config" : "\n[\n    \"nginx_log\"\n]\n"
+
+2018/04/04 15:03:26.727 [D] log conf :
+[
+    "nginx_log"
+]
+
+2018/04/04 15:03:26.727 [E] unmarshal failed,err:json: cannot unmarshal string into Go value of type main.logConfig conf:
+[
+    "nginx_log"
+]
+
+2018/04/04 15:03:53.795 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    {\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/error.log\",\n        \"service\":\"account\",\n        \"send_rate\":50000\n\t},\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/access.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/04 15:03:53.795 [D] log conf :
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 15:03:53.795 [E] unmarshal failed,err:json: cannot unmarshal number into Go struct field logConfig.send_rate of type string conf:
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 15:03:54.795 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    \"nginx_log\"\n]\n"
+
+2018/04/04 15:03:54.795 [D] log conf :
+[
+    "nginx_log"
+]
+
+2018/04/04 15:03:54.796 [E] unmarshal failed,err:json: cannot unmarshal string into Go value of type main.logConfig conf:
+[
+    "nginx_log"
+]
+
+2018/04/04 15:06:04.860 [D] init success
+2018/04/04 15:06:04.861 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:06:04.861 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:06:04.864 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.50.28/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/04 15:06:04.865 [D] init etcd success
+2018/04/04 15:06:04.867 [D] "/logagent/192.168.50.28/log_config" : "\n[\n    \"nginx_log\"\n]\n"
+
+2018/04/04 15:06:04.868 [D] log conf :
+[
+    "nginx_log"
+]
+
+2018/04/04 15:06:28.920 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    {\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/error.log\",\n        \"service\":\"account\",\n        \"send_rate\":50000\n\t},\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/access.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/04 15:06:28.920 [D] log conf :
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 15:06:29.924 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    \"nginx_log\"\n]\n"
+
+2018/04/04 15:06:29.924 [D] log conf :
+[
+    "nginx_log"
+]
+
+2018/04/04 15:10:00.990 [D] init success
+2018/04/04 15:10:00.990 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:10:00.990 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:10:00.994 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.50.28/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/04 15:10:00.995 [D] init etcd success
+2018/04/04 15:10:00.996 [D] "/logagent/192.168.50.28/log_config" : "\n[\n    \"nginx_log\"\n]\n"
+
+2018/04/04 15:10:00.997 [D] log conf :
+[
+    "nginx_log"
+]
+
+2018/04/04 15:10:15.031 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    {\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/error.log\",\n        \"service\":\"account\",\n        \"send_rate\":50000\n\t},\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/access.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/04 15:10:15.031 [D] log conf :
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 15:10:16.032 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    \"nginx_log\"\n]\n"
+
+2018/04/04 15:10:16.032 [D] log conf :
+[
+    "nginx_log"
+]
+
+2018/04/04 15:19:06.528 [D] init success
+2018/04/04 15:19:06.528 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:19:06.528 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:19:06.533 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.50.28/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/04 15:19:06.533 [D] init etcd success
+2018/04/04 15:19:06.534 [D] "/logagent/192.168.50.28/log_config" : "\n[\n    \"nginx_log\"\n]\n"
+
+2018/04/04 15:19:06.536 [D] log conf :
+[
+    "nginx_log"
+]
+
+2018/04/04 15:19:06.536 [E] unmarshal failed,err:json: cannot unmarshal string into Go value of type main.logConfig conf:
+[
+    "nginx_log"
+]
+
+2018/04/04 15:19:19.565 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    {\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/error.log\",\n        \"service\":\"account\",\n        \"send_rate\":50000\n\t},\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/access.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/04 15:19:19.565 [D] log conf :
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 15:19:19.565 [E] unmarshal failed,err:json: cannot unmarshal number into Go struct field logConfig.send_rate of type string conf:
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 15:19:20.567 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    \"nginx_log\"\n]\n"
+
+2018/04/04 15:19:20.571 [D] log conf :
+[
+    "nginx_log"
+]
+
+2018/04/04 15:19:20.571 [E] unmarshal failed,err:json: cannot unmarshal string into Go value of type main.logConfig conf:
+[
+    "nginx_log"
+]
+
+2018/04/04 15:53:23.795 [D] init success
+2018/04/04 15:53:23.795 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:53:23.795 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:53:23.799 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.50.28/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/04 15:53:23.800 [D] init etcd success
+2018/04/04 15:53:23.801 [D] "/logagent/192.168.50.28/log_config" : "\n[\n    \"nginx_log\"\n]\n"
+
+2018/04/04 15:53:23.802 [D] log conf :
+[
+    "nginx_log"
+]
+
+2018/04/04 15:53:23.802 [E] unmarshal failed,err:json: cannot unmarshal string into Go value of type main.logConfig conf:
+[
+    "nginx_log"
+]
+
+2018/04/04 15:53:28.810 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    {\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/error.log\",\n        \"service\":\"account\",\n        \"send_rate\":50000\n\t},\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/access.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/04 15:53:28.810 [D] log conf :
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 15:53:28.811 [E] unmarshal failed,err:json: cannot unmarshal number into Go struct field logConfig.send_rate of type string conf:
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 15:54:48.277 [D] init success
+2018/04/04 15:54:48.277 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:54:48.277 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 15:54:48.281 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.50.28/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/04 15:54:48.282 [D] init etcd success
+2018/04/04 15:54:48.283 [D] "/logagent/192.168.50.28/log_config" : "\n[\n    {\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/error.log\",\n        \"service\":\"account\",\n        \"send_rate\":50000\n\t},\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/access.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/04 15:54:48.284 [D] log conf :
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 15:54:48.284 [D] unmarshal succ conf:[{nginx_log D:/opensource/nginx-1.13.10/logs/error.log account 50000} {nginx_log D:/opensource/nginx-1.13.10/logs/access.log nginx 50000}]
+2018/04/04 15:54:54.301 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    {\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/error.log\",\n        \"service\":\"account\",\n        \"send_rate\":50000\n\t},\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/access.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/04 15:54:54.301 [D] log conf :
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 15:54:54.302 [D] unmarshal succ conf:[{nginx_log D:/opensource/nginx-1.13.10/logs/error.log account 50000} {nginx_log D:/opensource/nginx-1.13.10/logs/access.log nginx 50000}]
+2018/04/04 16:05:10.758 [D] init success
+2018/04/04 16:05:10.758 [I] [192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 16:05:10.758 [D] get local ip succ, ips:[192.168.50.28 10.211.55.2 10.37.129.2]
+2018/04/04 16:05:10.760 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.50.28/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/04 16:05:10.761 [D] init etcd success
+2018/04/04 16:05:10.762 [D] "/logagent/192.168.50.28/log_config" : "\n[\n    {\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/error.log\",\n        \"service\":\"account\",\n        \"send_rate\":50000\n\t},\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/access.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/04 16:05:10.763 [D] log conf :
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 16:05:10.763 [D] unmarshal succ conf:[{nginx_log D:/opensource/nginx-1.13.10/logs/error.log account 50000} {nginx_log D:/opensource/nginx-1.13.10/logs/access.log nginx 50000}]
+2018/04/04 16:05:10.763 [D] conf:{nginx_log D:/opensource/nginx-1.13.10/logs/error.log account 50000} --tailobj:<nil>
+2018/04/04 16:05:10.763 [D] conf:{nginx_log D:/opensource/nginx-1.13.10/logs/access.log nginx 50000} --tailobj:<nil>
+2018/04/04 16:05:10.763 [D] reaload from etcd success,config:[{nginx_log D:/opensource/nginx-1.13.10/logs/error.log account 50000} {nginx_log D:/opensource/nginx-1.13.10/logs/access.log nginx 50000}]
+2018/04/04 16:05:19.793 [D] PUT "/logagent/192.168.50.28/log_config" : "\n[\n    {\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/error.log\",\n        \"service\":\"account\",\n        \"send_rate\":50000\n\t},\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"D:/opensource/nginx-1.13.10/logs/access.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/04 16:05:19.794 [D] log conf :
+[
+    {
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/error.log",
+        "service":"account",
+        "send_rate":50000
+	},
+	{
+        "topic":"nginx_log",
+        "log_path":"D:/opensource/nginx-1.13.10/logs/access.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/04 16:05:19.794 [D] unmarshal succ conf:[{nginx_log D:/opensource/nginx-1.13.10/logs/error.log account 50000} {nginx_log D:/opensource/nginx-1.13.10/logs/access.log nginx 50000}]
+2018/04/04 16:05:19.794 [D] conf:{nginx_log D:/opensource/nginx-1.13.10/logs/error.log account 50000} --tailobj:<nil>
+2018/04/04 16:05:19.794 [D] conf:{nginx_log D:/opensource/nginx-1.13.10/logs/access.log nginx 50000} --tailobj:<nil>
+2018/04/04 16:05:19.794 [D] reaload from etcd success,config:[{nginx_log D:/opensource/nginx-1.13.10/logs/error.log account 50000} {nginx_log D:/opensource/nginx-1.13.10/logs/access.log nginx 50000}]
+2018/04/06 13:26:13.977 [D] init success
+2018/04/06 13:26:13.977 [I] [192.168.0.112 10.211.55.2 10.37.129.2]
+2018/04/06 13:26:13.977 [D] get local ip succ, ips:[192.168.0.112 10.211.55.2 10.37.129.2]
+2018/04/06 13:27:39.926 [D] init success
+2018/04/06 13:27:39.927 [I] [192.168.0.112 10.211.55.2 10.37.129.2]
+2018/04/06 13:27:39.927 [D] get local ip succ, ips:[192.168.0.112 10.211.55.2 10.37.129.2]
+2018/04/06 13:27:39.955 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.0.112/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/06 13:27:39.958 [D] init etcd success
+2018/04/06 13:30:47.508 [D] PUT "/logagent/192.168.0.112/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/06 13:30:47.508 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/06 13:30:47.509 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/06 13:30:47.509 [D] conf:{nginx_log /var/log/system.log nginx 50000} --tailobj:<nil>
+2018/04/06 13:30:47.509 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/06 13:31:31.627 [D] PUT "/logagent/192.168.0.112/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/06 13:31:31.627 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/06 13:31:31.628 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/06 13:31:31.628 [D] conf:{nginx_log /var/log/system.log nginx 50000} --tailobj:<nil>
+2018/04/06 13:31:31.628 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/06 13:42:50.651 [D] init success
+2018/04/06 13:42:50.651 [I] [192.168.0.112 10.211.55.2 10.37.129.2]
+2018/04/06 13:42:50.651 [D] get local ip succ, ips:[192.168.0.112 10.211.55.2 10.37.129.2]
+2018/04/06 13:42:50.655 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.0.112/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/06 13:42:50.656 [D] init etcd success
+2018/04/06 13:42:50.657 [D] "/logagent/192.168.0.112/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/06 13:42:50.658 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/06 13:42:50.658 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/06 13:42:50.658 [D] conf:{nginx_log /var/log/system.log nginx 50000} --tailobj:<nil>
+2018/04/06 13:42:50.658 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/06 13:43:02.690 [D] PUT "/logagent/192.168.0.112/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/06 13:43:02.690 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/06 13:43:02.690 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/06 13:43:02.690 [D] conf:{nginx_log /var/log/system.log nginx 50000} --tailobj:<nil>
+2018/04/06 13:43:02.691 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/06 13:44:11.525 [D] init success
+2018/04/06 13:44:11.525 [I] [192.168.0.112 10.211.55.2 10.37.129.2]
+2018/04/06 13:44:11.525 [D] get local ip succ, ips:[192.168.0.112 10.211.55.2 10.37.129.2]
+2018/04/06 13:44:11.538 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.0.112/log_config) %!d(string=/logagent/10.211.55.2/log_config) %!d(string=/logagent/10.37.129.2/log_config)]%!(EXTRA time.Duration=5s)
+2018/04/06 13:44:11.539 [D] init etcd success
+2018/04/06 13:44:11.541 [D] "/logagent/192.168.0.112/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/06 13:44:11.543 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/06 13:44:11.543 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/06 13:44:11.543 [D] conf:{nginx_log /var/log/system.log nginx 50000} --tailobj:<nil>
+2018/04/06 13:44:11.543 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/06 13:44:26.595 [D] PUT "/logagent/192.168.0.112/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/06 13:44:26.596 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/06 13:44:26.598 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/06 13:44:26.598 [D] conf:{nginx_log /var/log/system.log nginx 50000} --tailobj:<nil>
+2018/04/06 13:44:26.598 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/06 13:45:01.243 [D] init success
+2018/04/06 13:45:01.243 [I] [192.168.0.112 10.211.55.2 10.37.129.2]
+2018/04/06 13:45:01.243 [D] get local ip succ, ips:[192.168.0.112 10.211.55.2 10.37.129.2]
+2018/04/06 13:45:01.247 [D] etcd watch key:timeout:[%!d(string=/logagent/192.168.0.112/log_config%!(EXTRA string=192.168.0.112)) %!d(string=/logagent/192.168.0.112/log_config%!(EXTRA string=10.211.55.2)) %!d(string=/logagent/192.168.0.112/log_config%!(EXTRA string=10.37.129.2))]%!(EXTRA time.Duration=5s)
+2018/04/06 13:45:01.248 [D] init etcd success
+2018/04/22 17:22:28.068 [D] init success
+2018/04/22 17:22:28.070 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 17:22:28.070 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 17:22:28.123 [D] etcd watch key:timeout:[%!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2))]%!(EXTRA time.Duration=5s)
+2018/04/22 17:22:28.124 [D] init etcd success
+2018/04/22 17:32:38.448 [D] init success
+2018/04/22 17:32:38.449 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 17:32:38.449 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 17:32:38.453 [D] etcd watch key:timeout:[%!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2))]%!(EXTRA time.Duration=5s)
+2018/04/22 17:32:38.455 [D] init etcd success
+2018/04/22 17:36:54.725 [D] init success
+2018/04/22 17:36:54.725 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 17:36:54.725 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 17:36:54.727 [D] etcd watch key:timeout:[%!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2))]%!(EXTRA time.Duration=5s)
+2018/04/22 17:36:54.728 [D] init etcd success
+2018/04/22 17:40:54.002 [D] init success
+2018/04/22 17:40:54.002 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 17:40:54.002 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 17:40:54.006 [D] etcd watch key:timeout:[%!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2))]%!(EXTRA time.Duration=5s)
+2018/04/22 17:40:54.007 [D] init etcd success
+2018/04/22 17:50:26.995 [D] init success
+2018/04/22 17:50:26.995 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 17:50:26.995 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 17:50:27.017 [D] etcd watch key:timeout:[%!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2))]%!(EXTRA time.Duration=5s)
+2018/04/22 17:50:27.020 [D] init etcd success
+2018/04/22 17:53:41.259 [D] init success
+2018/04/22 17:53:41.260 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 17:53:41.260 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 17:53:41.263 [D] etcd watch key:timeout:[%!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2))]%!(EXTRA time.Duration=5s)
+2018/04/22 17:53:41.263 [D] init etcd success
+
+2018/04/22 18:00:33.817 [D] init success
+2018/04/22 18:00:33.817 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:00:33.817 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:00:33.822 [D] etcd watch key:timeout:[%!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2))]%!(EXTRA time.Duration=5s)
+2018/04/22 18:00:33.825 [D] init etcd success
+2018/04/22 18:00:33.828 [I] 0xc4201347e0
+2018/04/22 18:02:00.656 [D] init success
+2018/04/22 18:02:00.656 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:02:00.656 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:02:00.660 [D] etcd watch key:timeout:[%!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2)) %!d(string=/logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2))]%!(EXTRA time.Duration=5s)
+2018/04/22 18:02:00.661 [D] init etcd success
+
+
+2018/04/22 18:04:23.890 [D] init success
+2018/04/22 18:04:23.891 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:04:23.891 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:04:23.894 [D] etcd watch key:[/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180) /logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2) /logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2)] timeout:5000000000
+2018/04/22 18:04:23.895 [D] init etcd success
+2018/04/22 18:11:55.720 [D] init success
+2018/04/22 18:11:55.720 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:11:55.720 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:11:55.722 [I] [172.16.157.14:2371] /logagent/172.16.146.180/log_config
+2018/04/22 18:11:55.723 [D] etcd watch key:[/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180) /logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2) /logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2)] timeout:5000000000
+2018/04/22 18:11:55.724 [D] init etcd success
+2018/04/22 18:14:35.885 [D] init success
+2018/04/22 18:14:35.885 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:14:35.885 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:14:35.888 [I] [172.16.157.14:2371] /logagent/172.16.146.180/log_config 5ms
+2018/04/22 18:14:35.888 [D] etcd watch key:[/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180) /logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2) /logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2)] timeout:5000000000
+2018/04/22 18:14:35.889 [D] init etcd success
+2018/04/22 18:15:56.110 [D] init success
+2018/04/22 18:15:56.110 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:15:56.110 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:15:56.114 [D] etcd watch key:[/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180) /logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2) /logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2)] timeout:5s
+2018/04/22 18:15:56.115 [D] init etcd success
+
+
+2018/04/22 18:17:12.995 [D] init success
+2018/04/22 18:17:12.995 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:17:12.995 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:17:12.998 [D] etcd watch key:[/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180) /logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2) /logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2)] timeout:5s
+2018/04/22 18:17:12.999 [D] init etcd success
+2018/04/22 18:18:42.178 [D] init success
+2018/04/22 18:18:42.178 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:18:42.178 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 18:18:42.184 [I] [/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180) /logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2) /logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2)]
+2018/04/22 18:18:42.184 [I] 5s
+2018/04/22 18:18:42.185 [D] etcd watch key:[/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180) /logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2) /logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2)] timeout:5s
+2018/04/22 18:18:42.185 [D] init etcd success
+2018/04/22 19:52:00.268 [D] init success
+2018/04/22 19:52:00.268 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 19:52:00.268 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 19:52:01.031 [E] init kafka client failed,err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+
+2018/04/22 19:52:01.032 [E] init kafka faild, err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+2018/04/22 19:52:10.186 [D] init success
+2018/04/22 19:52:10.186 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 19:52:10.186 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 19:52:10.948 [E] init kafka client failed,err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+
+2018/04/22 19:52:10.948 [E] init kafka faild, err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+2018/04/22 19:55:14.854 [D] init success
+2018/04/22 19:55:14.854 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 19:55:14.854 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 19:55:14.900 [I] /logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180)
+2018/04/22 19:55:14.901 [I] /logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2)
+2018/04/22 19:55:14.901 [I] /logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2)
+2018/04/22 19:55:14.901 [D] etcd watch key:[/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180) /logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2) /logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2)] timeout:5s
+2018/04/22 19:55:14.902 [D] init etcd success
+
+
+2018/04/22 19:55:39.645 [D] init success
+2018/04/22 19:55:39.645 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 19:55:39.645 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 19:55:39.648 [I] /logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180)
+2018/04/22 19:55:39.648 [I] /logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2)
+2018/04/22 19:55:39.648 [I] /logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2)
+2018/04/22 19:55:39.648 [D] etcd watch key:[/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180) /logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2) /logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2)] timeout:5s
+2018/04/22 19:55:39.649 [D] init etcd success
+2018/04/22 20:01:42.746 [D] init success
+2018/04/22 20:01:42.747 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:01:42.747 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:01:42.750 [I] /logagent/172.16.146.180/log_config
+2018/04/22 20:01:42.750 [I] /logagent/172.16.146.180/log_config
+2018/04/22 20:01:42.750 [I] /logagent/172.16.146.180/log_config
+2018/04/22 20:01:42.750 [D] etcd watch key:[/logagent/172.16.146.180/log_config%!(EXTRA string=172.16.146.180) /logagent/172.16.146.180/log_config%!(EXTRA string=10.211.55.2) /logagent/172.16.146.180/log_config%!(EXTRA string=10.37.129.2)] timeout:5s
+2018/04/22 20:01:42.753 [D] init etcd success
+2018/04/22 20:02:14.044 [D] init success
+2018/04/22 20:02:14.044 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:02:14.044 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:02:14.047 [I] /logagent/%s/log_config
+2018/04/22 20:02:14.047 [I] /logagent/%s/log_config
+2018/04/22 20:02:14.047 [I] /logagent/%s/log_config
+2018/04/22 20:02:14.047 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 20:02:14.048 [D] init etcd success
+2018/04/22 20:02:14.049 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx2\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:02:14.050 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx2",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:02:14.050 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx2 50000}]
+2018/04/22 20:02:14.050 [D] conf:{nginx_log /var/log/system.log nginx2 50000} --tailobj:<nil>
+2018/04/22 20:02:14.050 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx2 50000}]
+2018/04/22 20:02:57.070 [D] limit is exited
+2018/04/22 20:02:57.580 [D] limit is exited
+2018/04/22 20:02:57.885 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:02:58.668 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:19.862 [D] limit is exited
+2018/04/22 20:03:20.116 [D] limit is exited
+2018/04/22 20:03:20.116 [D] limit is exited
+2018/04/22 20:03:20.116 [D] limit is exited
+2018/04/22 20:03:20.116 [D] limit is exited
+2018/04/22 20:03:20.116 [D] limit is exited
+2018/04/22 20:03:20.118 [D] limit is exited
+2018/04/22 20:03:20.118 [D] limit is exited
+2018/04/22 20:03:20.118 [D] limit is exited
+2018/04/22 20:03:20.118 [D] limit is exited
+2018/04/22 20:03:20.118 [D] limit is exited
+2018/04/22 20:03:20.118 [D] limit is exited
+2018/04/22 20:03:20.118 [D] limit is exited
+2018/04/22 20:03:20.118 [D] limit is exited
+2018/04/22 20:03:20.119 [D] limit is exited
+2018/04/22 20:03:20.119 [D] limit is exited
+2018/04/22 20:03:20.119 [D] limit is exited
+2018/04/22 20:03:20.119 [D] limit is exited
+2018/04/22 20:03:20.119 [D] limit is exited
+2018/04/22 20:03:20.119 [D] limit is exited
+2018/04/22 20:03:20.119 [D] limit is exited
+2018/04/22 20:03:20.641 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:21.422 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:22.206 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:22.402 [D] limit is exited
+2018/04/22 20:03:22.997 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:23.785 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:24.568 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:25.358 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:26.135 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:26.917 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:27.707 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:28.489 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:29.278 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:30.059 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:30.842 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:31.631 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:32.418 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:33.202 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:33.987 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:34.767 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:35.553 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:36.329 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:03:37.117 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:04:42.498 [D] PUT "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:04:42.498 [I] 
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:04:42.498 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:04:42.499 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:04:42.499 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:05:01.117 [D] limit is exited
+2018/04/22 20:05:01.117 [D] limit is exited
+2018/04/22 20:05:01.117 [D] limit is exited
+2018/04/22 20:05:01.117 [D] limit is exited
+2018/04/22 20:05:01.117 [D] limit is exited
+2018/04/22 20:05:01.117 [D] limit is exited
+2018/04/22 20:05:01.117 [D] limit is exited
+2018/04/22 20:05:01.117 [D] limit is exited
+2018/04/22 20:05:01.118 [D] limit is exited
+2018/04/22 20:05:01.118 [D] limit is exited
+2018/04/22 20:05:01.118 [D] limit is exited
+2018/04/22 20:05:01.118 [D] limit is exited
+2018/04/22 20:05:01.118 [D] limit is exited
+2018/04/22 20:05:01.118 [D] limit is exited
+2018/04/22 20:05:01.118 [D] limit is exited
+2018/04/22 20:05:01.118 [D] limit is exited
+2018/04/22 20:05:01.119 [D] limit is exited
+2018/04/22 20:05:01.119 [D] limit is exited
+2018/04/22 20:05:01.119 [D] limit is exited
+2018/04/22 20:05:01.119 [D] limit is exited
+2018/04/22 20:05:01.888 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:02.669 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:03.142 [D] limit is exited
+2018/04/22 20:05:03.455 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:04.240 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:05.018 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:05.800 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:06.591 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:07.376 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:08.163 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:08.947 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:09.731 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:10.512 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:11.301 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:12.080 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:12.864 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:13.646 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:14.427 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:15.212 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:15.990 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:16.769 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:17.553 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:05:40.370 [D] limit is exited
+2018/04/22 20:05:41.155 [E] send message to kafka failed,err:kafka server: In the middle of a leadership election, there is currently no leader for this partition and hence it is unavailable for writes.
+2018/04/22 20:12:16.922 [D] init success
+2018/04/22 20:12:16.923 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:12:16.923 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:12:16.955 [I] /logagent/%s/log_config
+2018/04/22 20:12:16.955 [I] /logagent/%s/log_config
+2018/04/22 20:12:16.955 [I] /logagent/%s/log_config
+2018/04/22 20:12:16.955 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 20:12:16.956 [D] init etcd success
+2018/04/22 20:12:16.957 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:12:16.958 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:12:16.958 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:12:16.958 [D] conf:{nginx_log /var/log/system.log nginx 50000} --tailobj:<nil>
+2018/04/22 20:12:16.958 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:12:29.858 [D] limit is exited
+2018/04/22 20:12:29.858 [D] limit is exited
+2018/04/22 20:12:29.859 [D] limit is exited
+2018/04/22 20:12:29.859 [D] limit is exited
+2018/04/22 20:12:29.859 [D] limit is exited
+2018/04/22 20:12:29.859 [D] limit is exited
+2018/04/22 20:12:29.859 [D] limit is exited
+2018/04/22 20:12:29.859 [D] limit is exited
+2018/04/22 20:12:29.860 [D] limit is exited
+2018/04/22 20:12:29.860 [D] limit is exited
+2018/04/22 20:12:29.860 [D] limit is exited
+2018/04/22 20:12:29.860 [D] limit is exited
+2018/04/22 20:12:29.861 [D] limit is exited
+2018/04/22 20:12:29.861 [D] limit is exited
+2018/04/22 20:12:29.861 [D] limit is exited
+2018/04/22 20:12:29.861 [D] limit is exited
+2018/04/22 20:12:29.861 [D] limit is exited
+2018/04/22 20:12:29.861 [D] limit is exited
+2018/04/22 20:12:29.862 [D] limit is exited
+2018/04/22 20:12:29.862 [D] limit is exited
+2018/04/22 20:12:29.862 [D] limit is exited
+2018/04/22 20:12:32.132 [D] limit is exited
+2018/04/22 20:18:02.825 [D] init success
+2018/04/22 20:18:02.825 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:18:02.825 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:18:02.832 [I] /logagent/%s/log_config
+2018/04/22 20:18:02.832 [I] /logagent/%s/log_config
+2018/04/22 20:18:02.832 [I] /logagent/%s/log_config
+2018/04/22 20:18:02.832 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 20:18:02.833 [D] init etcd success
+2018/04/22 20:18:02.834 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:18:02.835 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:18:02.835 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:18:02.835 [D] conf:{nginx_log /var/log/system.log nginx 50000} --tailobj:<nil>
+2018/04/22 20:18:02.836 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:19:52.162 [D] PUT "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:19:52.162 [I] 
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:19:52.162 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:19:52.163 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:19:52.163 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:22:04.740 [D] init success
+2018/04/22 20:22:04.740 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:22:04.741 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:22:04.749 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 20:22:04.750 [D] init etcd success
+2018/04/22 20:22:04.751 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:22:04.752 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:22:04.752 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:22:04.752 [D] conf:{nginx_log /var/log/system.log nginx 50000} --tailobj:<nil>
+2018/04/22 20:22:04.752 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFHTTPSessionManager is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b570008) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad297e8). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFNetworkReachabilityManager is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b56ff68) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29888). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFSecurityPolicy is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b56ffb8) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad298d8). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFQueryStringPair is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b570148) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29928). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFHTTPRequestSerializer is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b570198) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29978). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFStreamingMultipartFormData is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b5701c0) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad299a0). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFMultipartBodyStream is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b570210) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad299f0). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFHTTPBodyPart is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b570238) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29a18). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFJSONRequestSerializer is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b5702d8) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29ab8). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFPropertyListRequestSerializer is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b570328) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29b08). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFHTTPResponseSerializer is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b570378) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29b58). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFJSONResponseSerializer is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b5703c8) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29ba8). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFXMLParserResponseSerializer is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b570418) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29bf8). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFXMLDocumentResponseSerializer is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b570468) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29c48). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFPropertyListResponseSerializer is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b5704b8) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29c98). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFImageResponseSerializer is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b570508) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29ce8). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFCompoundResponseSerializer is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b570558) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29d38). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFURLSessionManagerTaskDelegate is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b570058) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29d88). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.891 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class _AFURLSessionTaskSwizzling is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b5700d0) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29e00). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:14.892 [I] Apr 22 20:22:14 zhaofandeMacBook-Pro WeChat[2781]: objc[2781]: Class AFURLSessionManager is implemented in both /Applications/WeChat.app/Contents/Frameworks/AFNetworking.framework/Versions/A/AFNetworking (0x10b5700f8) and /Applications/WeChat.app/Contents/MacOS/WeChat (0x10ad29e28). One of the two will be used. Which one is undefined.
+2018/04/22 20:22:17.422 [I] Apr 22 20:22:17 zhaofandeMacBook-Pro systemstats[60]: assertion failed: 17E199: systemstats + 914800 [D1E75C38-62CE-3D77-9ED3-5F6D38EF0676]: 0x40
+2018/04/22 20:23:12.349 [I] Apr 22 20:23:12 zhaofandeMacBook-Pro com.apple.xpc.launchd[1] (com.apple.imfoundation.IMRemoteURLConnectionAgent): Unknown key for integer: _DirtyJetsamMemoryLimit
+2018/04/22 20:23:42.485 [I] Apr 22 20:23:42 --- last message repeated 1 time ---
+2018/04/22 20:27:23.395 [D] init success
+2018/04/22 20:27:23.395 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:27:23.395 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:27:23.399 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 20:27:23.400 [D] init etcd success
+2018/04/22 20:27:23.401 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:27:23.404 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:27:23.404 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:27:23.404 [D] conf:{nginx_log /var/log/system.log nginx 50000} --tailobj:<nil>
+2018/04/22 20:27:23.404 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:42:27.618 [D] init success
+2018/04/22 20:42:27.618 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:42:27.618 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:42:27.630 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 20:42:27.631 [D] init etcd success
+2018/04/22 20:42:27.632 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:42:27.634 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:42:27.634 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:42:27.634 [D] conf:{nginx_log /var/log/system.log nginx 50000} --tailobj:<nil>
+2018/04/22 20:42:27.634 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:42:37.749 [D] init success
+2018/04/22 20:42:37.749 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:42:37.749 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:42:37.753 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 20:42:37.754 [D] init etcd success
+2018/04/22 20:42:37.756 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:42:37.757 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:42:37.757 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:42:37.757 [D] conf:{nginx_log /var/log/system.log nginx 50000} -- tailobj:<nil>
+2018/04/22 20:42:37.757 [I] conf.logPath is [/var/log/system.log] tailobj is [&{%!s(*tail.Tail=&{/var/log/system.log 0xc420220840 {0xc42021c160 true false true false <nil> true 0 0xc4201c6370} <nil> <nil> 0xc4201c44a0 <nil> {{0 0} <nil> <nil> <nil>} {0 0}}) %!s(*main.SecondLimit=&{1524400957 0 50000}) %!s(int64=0) {nginx_log /var/log/system.log nginx %!s(int=50000)} %!s(chan bool=0xc4202942a0)}]
+2018/04/22 20:42:37.757 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:45:35.520 [D] init success
+2018/04/22 20:45:35.520 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:45:35.520 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:45:35.529 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 20:45:35.531 [D] init etcd success
+2018/04/22 20:45:35.533 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:45:35.534 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:45:35.534 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:45:35.535 [I] map[]
+2018/04/22 20:45:35.535 [I] /var/log/system.log
+2018/04/22 20:45:35.535 [D] conf:{nginx_log /var/log/system.log nginx 50000} -- tailobj:<nil>
+2018/04/22 20:45:35.535 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:47:51.195 [D] init success
+2018/04/22 20:47:51.195 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:47:51.195 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:47:51.201 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 20:47:51.202 [D] init etcd success
+2018/04/22 20:47:51.203 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:47:51.204 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:47:51.204 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:47:51.204 [D] conf:{nginx_log /var/log/system.log nginx 50000} -- tailobj:<nil>
+2018/04/22 20:47:51.204 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:49:56.354 [D] init success
+2018/04/22 20:49:56.355 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:49:56.355 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:49:56.359 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 20:49:56.360 [D] init etcd success
+2018/04/22 20:49:56.360 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:49:56.361 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:49:56.362 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:49:56.362 [D] conf:{nginx_log /var/log/system.log nginx 50000} -- tailobj:<nil>
+2018/04/22 20:49:56.362 [I] map [map[/var/log/system.log:%!s(*main.TailObj=&{0xc4200f18c0 0xc4200beed0 0 {nginx_log /var/log/system.log nginx 50000} 0xc4201a4460})]]
+2018/04/22 20:49:56.362 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:53:59.546 [D] init success
+2018/04/22 20:53:59.546 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:53:59.546 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:53:59.550 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 20:53:59.553 [D] init etcd success
+2018/04/22 20:53:59.555 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:53:59.557 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:53:59.557 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:53:59.557 [D] conf:{nginx_log /var/log/system.log nginx 50000} -- tailobj:<nil>
+2018/04/22 20:53:59.557 [I] map [map[/var/log/system.log:%!s(*main.TailObj=&{0xc42031e000 0xc42022e200 0 {nginx_log /var/log/system.log nginx 50000} 0xc4202701c0})]]
+2018/04/22 20:53:59.557 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:56:27.569 [D] init success
+2018/04/22 20:56:27.569 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:56:27.569 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 20:56:27.573 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 20:56:27.575 [D] init etcd success
+2018/04/22 20:56:27.578 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 20:56:27.580 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 20:56:27.580 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:56:27.580 [D] conf:{nginx_log /var/log/system.log nginx 50000} -- tailobj:<nil>
+2018/04/22 20:56:27.580 [I] map [map[/var/log/system.log:%!s(*main.TailObj=&{0xc4200f18c0 0xc4200bef50 0 {nginx_log /var/log/system.log nginx 50000} 0xc4201a4620})]]
+2018/04/22 20:56:27.580 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 20:56:48.841 [D] limit is exited
+2018/04/22 20:56:48.842 [D] limit is exited
+2018/04/22 20:56:48.842 [D] limit is exited
+2018/04/22 20:56:48.842 [D] limit is exited
+2018/04/22 20:56:48.842 [D] limit is exited
+2018/04/22 20:56:48.842 [D] limit is exited
+2018/04/22 20:56:48.842 [D] limit is exited
+2018/04/22 20:56:48.842 [D] limit is exited
+2018/04/22 20:56:48.842 [D] limit is exited
+2018/04/22 20:56:48.842 [D] limit is exited
+2018/04/22 20:56:48.842 [D] limit is exited
+2018/04/22 20:56:48.842 [D] limit is exited
+2018/04/22 20:56:48.842 [D] limit is exited
+2018/04/22 20:56:48.843 [D] limit is exited
+2018/04/22 20:56:48.843 [D] limit is exited
+2018/04/22 20:56:48.843 [D] limit is exited
+2018/04/22 20:56:48.843 [D] limit is exited
+2018/04/22 20:56:48.843 [D] limit is exited
+2018/04/22 20:56:48.843 [D] limit is exited
+2018/04/22 20:56:48.843 [D] limit is exited
+2018/04/22 20:56:50.867 [D] limit is exited
+2018/04/22 20:57:23.780 [D] limit is exited
+2018/04/22 20:57:23.780 [D] limit is exited
+2018/04/22 20:57:23.780 [D] limit is exited
+2018/04/22 20:57:23.780 [D] limit is exited
+2018/04/22 20:57:23.780 [D] limit is exited
+2018/04/22 20:57:23.780 [D] limit is exited
+2018/04/22 20:57:23.781 [D] limit is exited
+2018/04/22 20:57:23.781 [D] limit is exited
+2018/04/22 20:57:23.781 [D] limit is exited
+2018/04/22 20:57:23.781 [D] limit is exited
+2018/04/22 20:57:23.781 [D] limit is exited
+2018/04/22 20:57:23.781 [D] limit is exited
+2018/04/22 20:57:23.781 [D] limit is exited
+2018/04/22 20:57:23.781 [D] limit is exited
+2018/04/22 20:57:23.781 [D] limit is exited
+2018/04/22 20:57:23.781 [D] limit is exited
+2018/04/22 20:57:23.781 [D] limit is exited
+2018/04/22 20:57:23.782 [D] limit is exited
+2018/04/22 20:57:23.782 [D] limit is exited
+2018/04/22 20:57:23.782 [D] limit is exited
+2018/04/22 20:57:30.882 [D] limit is exited
+2018/04/22 20:57:35.180 [D] limit is exited
+2018/04/22 20:57:37.464 [D] limit is exited
+2018/04/22 21:00:13.138 [D] limit is exited
+2018/04/22 21:00:13.389 [D] limit is exited
+2018/04/22 21:00:43.255 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.725 [D] limit is exited
+2018/04/22 21:01:00.726 [D] limit is exited
+2018/04/22 21:01:00.726 [D] limit is exited
+2018/04/22 21:01:02.746 [D] limit is exited
+2018/04/22 21:02:02.018 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:48.599 [D] limit is exited
+2018/04/22 21:02:59.491 [D] limit is exited
+2018/04/22 21:03:00.263 [D] limit is exited
+2018/04/22 21:03:03.549 [D] limit is exited
+2018/04/22 21:03:39.188 [D] init success
+2018/04/22 21:03:39.188 [I] [172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 21:03:39.188 [D] get local ip succ, ips:[172.16.146.180 10.211.55.2 10.37.129.2]
+2018/04/22 21:03:39.194 [D] etcd watch key:[/logagent/172.16.146.180/log_config /logagent/10.211.55.2/log_config /logagent/10.37.129.2/log_config] timeout:5s
+2018/04/22 21:03:39.195 [D] init etcd success
+2018/04/22 21:03:39.196 [D] "/logagent/172.16.146.180/log_config" : "\n[\n\t{\n        \"topic\":\"nginx_log\",\n        \"log_path\":\"/var/log/system.log\",\n        \"service\":\"nginx\",\n        \"send_rate\":50000\n\t}\n]\n"
+
+2018/04/22 21:03:39.197 [D] log conf :
+[
+	{
+        "topic":"nginx_log",
+        "log_path":"/var/log/system.log",
+        "service":"nginx",
+        "send_rate":50000
+	}
+]
+
+2018/04/22 21:03:39.197 [D] unmarshal succ conf:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 21:03:39.197 [D] conf:{nginx_log /var/log/system.log nginx 50000} -- tailobj:<nil>
+2018/04/22 21:03:39.197 [I] map [map[/var/log/system.log:%!s(*main.TailObj=&{0xc42031e000 0xc4200361e0 0 {nginx_log /var/log/system.log nginx 50000} 0xc4200900e0})]]
+2018/04/22 21:03:39.198 [D] reaload from etcd success,config:[{nginx_log /var/log/system.log nginx 50000}]
+2018/04/22 21:03:48.303 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:48.304 [D] limit is exited
+2018/04/22 21:03:54.882 [D] limit is exited

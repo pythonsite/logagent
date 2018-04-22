@@ -4,6 +4,7 @@ import (
 	"go_dev/13/config"
 	"strings"
 	"fmt"
+	"github.com/astaxie/beego/logs"
 )
 
 type AppConfig struct {
@@ -12,6 +13,10 @@ type AppConfig struct {
 	kafkaAddr string
 	KafkaThreadNum int
 	LogFiles []string
+	etcdAddr []string
+	etcdWatchKeyFmt string
+	//单位为毫秒
+	etcdTimeout int
 }
 
 var appConfig = &AppConfig{}
@@ -21,6 +26,7 @@ func initConfig(filename string)(err error){
 	if err != nil{
 		return
 	}
+	logs.Info(conf.GetString("etcd_watch_key"))
 	logPath,err := conf.GetString("log_path")
 	if err != nil || len(logPath) == 0 {
 		return
@@ -38,20 +44,35 @@ func initConfig(filename string)(err error){
 		return
 	}
 
-	appConfig.KafkaThreadNum = conf.GetIntDefault("kafka_thread_num",8)
 
-	arr := strings.Split(logFiles,",")
-	for _,v := range arr{
+	etcdAddr, err := conf.GetString("etcd_addr")
+	if err != nil || len(etcdAddr) == 0{
+		return
+	}
+
+	arr := strings.Split(etcdAddr, ",")
+	for _, v := range arr {
 		str := strings.TrimSpace(v)
-		if len(str) == 0{
+		if len(str) == 0 {
 			continue
 		}
-		appConfig.LogFiles = append(appConfig.LogFiles,str)
+		appConfig.etcdAddr = append(appConfig.etcdAddr, str)
 	}
+
+	etcdKey, err := conf.GetString("etcd_watch_key")
+	if err != nil || len(etcdKey) == 0{
+		logs.Warn("get etcd watch key failed, err:%v", err)
+		return
+	}
+
+	appConfig.etcdTimeout = conf.GetIntDefault("etcd_timeout", 1500)
+	appConfig.KafkaThreadNum = conf.GetIntDefault("kafka_thread_num",8)
+
+	appConfig.etcdWatchKeyFmt = etcdKey
 	appConfig.kafkaAddr = kafkaAddr
 	appConfig.LogLevel = logLevel
 	appConfig.LogPath = logPath
 
-	fmt.Printf("load conf success data:%v\n",appConfig)
+	fmt.Printf("load config succ, data:%v\n", appConfig)
 	return
 }
