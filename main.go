@@ -62,7 +62,6 @@ func main() {
 		logs.Error("init kafka faild, err:%v", err)
 		return
 	}
-	//logs.Info(appConfig.etcdAddr,appConfig.etcdWatchKeyFmt,time.Duration(appConfig.etcdTimeout)*time.Microsecond)
 	err = initEtcd(appConfig.etcdAddr, appConfig.etcdWatchKeyFmt,
 		time.Duration(appConfig.etcdTimeout)*time.Millisecond)
 	if err != nil {
